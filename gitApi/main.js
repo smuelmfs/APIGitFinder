@@ -32,9 +32,9 @@
         <div class="card" style="width: auto;">
             <img class="card-img-top" src="${user.avatar_url}">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">Repositórios:<span class="badge">${user.public_repos}</span></li>
-                <li class="list-group-item">Seguidores:<span class="badge">${user.followers}</span></li>
-                <li class="list-group-item">Seguindo:<span class="badge">${user.following}</span></li>
+                <li class="list-group-item">Repositórios: <span class="badge badge-primary">${user.public_repos}</span></li>
+                <li class="list-group-item">Seguidores: <span class="badge badge-success">${user.followers}</span></li>
+                <li class="list-group-item">Seguindo: <span class="badge badge-danger">${user.following}</span></li>
             </ul>
             <div class="card-body">
                 <a href="${user.html_url}" target="_blank" class="btn btn-warning btn-block">Ver perfil</a>
@@ -56,9 +56,9 @@
         <div class="row">
             <div class="col-md-6"><a href="${repo.html_url}" target="_black">${repo.name}</a></div>
             <div class="col-md-6">
-                <span class ="badge-primary">Stars: ${repo.stargazers_count}</span>
-                <span class ="badge-sucess">Watch: ${repo.watchers_count}</span>
-                <span class ="badge-warning">Forks: ${repo.forks_count}</span>
+                <span class="badge badge-secondary">Stars: ${repo.stargazers_count}</span></span>
+                <span class="badge badge-success">Watch: ${repo.watchers_count}</span>
+                <span class="badge badge-info">Forks: ${repo.forks_count}</span>
             </div>
         </div>
     </div>`
